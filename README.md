@@ -21,11 +21,9 @@ You will get a folder containing all the website files.
 
 Upload the extracted folder to any website builder such as:
 
-⚡ Antigravity
-
 🌍 GitHub Pages
 
-🧱 Bolt / AI website builders
+🧱  AI website builders
 
 ☁️ Any hosting platform
 

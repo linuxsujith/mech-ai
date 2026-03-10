@@ -1,0 +1,46 @@
+
+> frontend@0.1.0 start
+> craco start
+
+node:internal/modules/cjs/loader:1207
+  const err = new Error(message);
+              ^
+
+Error: Cannot find module 'ajv/dist/compile/codegen'
+Require stack:
+- /home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/ajv-keywords/dist/definitions/typeof.js
+- /home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/ajv-keywords/dist/keywords/typeof.js
+- /home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/ajv-keywords/dist/keywords/index.js
+- /home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/ajv-keywords/dist/index.js
+- /home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/schema-utils/dist/validate.js
+- /home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/schema-utils/dist/index.js
+- /home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/terser-webpack-plugin/dist/index.js
+- /home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/react-scripts/config/webpack.config.js
+- /home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/@craco/craco/dist/lib/cra.js
+- /home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/@craco/craco/dist/scripts/start.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1207:15)
+    at Module._load (node:internal/modules/cjs/loader:1038:27)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+    at require (node:internal/modules/helpers:182:18)
+    at Object.<anonymous> (/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/ajv-keywords/dist/definitions/typeof.js:3:19)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/ajv-keywords/dist/definitions/typeof.js',
+    '/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/ajv-keywords/dist/keywords/typeof.js',
+    '/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/ajv-keywords/dist/keywords/index.js',
+    '/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/ajv-keywords/dist/index.js',
+    '/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/schema-utils/dist/validate.js',
+    '/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/schema-utils/dist/index.js',
+    '/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/terser-webpack-plugin/dist/index.js',
+    '/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/react-scripts/config/webpack.config.js',
+    '/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/@craco/craco/dist/lib/cra.js',
+    '/home/linuxsujith/Downloads/ai-mechanic-main/frontend/node_modules/@craco/craco/dist/scripts/start.js'
+  ]
+}
+
+Node.js v20.20.0

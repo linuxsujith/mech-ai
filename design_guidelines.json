@@ -1,0 +1,180 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "MECHAI",
+      "tagline": "The Intelligent Digital Garage",
+      "theme_name": "Midnight Foundry",
+      "personality": "Dominant, Premium, Precision, Futuristic, Authority",
+      "mode": "dark-only"
+    },
+    "colors": {
+      "palette": {
+        "background": {
+          "default": "#050505",
+          "paper": "#0A0A0A",
+          "subtle": "#121212"
+        },
+        "primary": {
+          "gold": "#D4AF37",
+          "gold_dim": "#C5A028",
+          "gold_glow": "rgba(212, 175, 55, 0.5)"
+        },
+        "secondary": {
+          "carbon": "#1A1A1A",
+          "steel": "#2A2A2A",
+          "glass_border": "rgba(255, 255, 255, 0.1)"
+        },
+        "functional": {
+          "success": "#00E676",
+          "warning": "#FFEA00",
+          "emergency_red": "#FF3B30",
+          "info": "#2979FF"
+        },
+        "text": {
+          "primary": "#FFFFFF",
+          "secondary": "#A1A1AA",
+          "muted": "#52525B",
+          "gold": "#D4AF37"
+        }
+      },
+      "gradients": {
+        "gold_metal": "linear-gradient(135deg, #D4AF37 0%, #F7EF8A 50%, #D4AF37 100%)",
+        "dark_scan": "linear-gradient(180deg, rgba(5,5,5,0) 0%, rgba(212,175,55,0.1) 50%, rgba(5,5,5,0) 100%)"
+      }
+    },
+    "typography": {
+      "font_family": {
+        "display": "Rajdhani, sans-serif",
+        "body": "DM Sans, sans-serif",
+        "mono": "JetBrains Mono, monospace",
+        "dashboard_heading": "Manrope, sans-serif"
+      },
+      "scaling": {
+        "hero": "text-6xl md:text-8xl font-bold tracking-tighter uppercase",
+        "h1": "text-4xl md:text-5xl font-bold tracking-tight",
+        "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+        "h3": "text-2xl font-medium",
+        "body_lg": "text-lg leading-relaxed",
+        "body_sm": "text-sm text-muted-foreground",
+        "mono_label": "font-mono text-xs tracking-widest uppercase text-gold"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "p-6 md:p-12 lg:p-24",
+        "section_gap": "gap-16 md:gap-32",
+        "element_gap": "gap-4 md:gap-8"
+      },
+      "grid_systems": {
+        "landing": "grid grid-cols-1 md:grid-cols-12 gap-8",
+        "dashboard": "grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4 dense"
+      },
+      "border_radius": {
+        "default": "rounded-none",
+        "soft": "rounded-sm",
+        "pill": "rounded-full"
+      }
+    },
+    "visual_enhancers": {
+      "glassmorphism": {
+        "panel": "bg-black/60 backdrop-blur-xl border border-white/10 shadow-2xl",
+        "overlay": "bg-black/80 backdrop-blur-sm"
+      },
+      "borders": {
+        "gold_trim": "border border-gold/30 hover:border-gold/60 transition-colors duration-300",
+        "subtle_edge": "border border-white/5"
+      },
+      "shadows": {
+        "glow_gold": "0 0 20px -5px rgba(212, 175, 55, 0.3)",
+        "glow_red": "0 0 30px -5px rgba(255, 59, 48, 0.4)"
+      }
+    },
+    "motion": {
+      "transitions": {
+        "default": "transition-all duration-300 ease-out",
+        "slow": "transition-all duration-700 ease-in-out"
+      },
+      "animations": {
+        "fade_in_up": "animate-in fade-in slide-in-from-bottom-8 duration-700",
+        "scan_line": "animate-[scan_2s_linear_infinite]"
+      }
+    },
+    "component_strategies": {
+      "buttons": {
+        "primary": "bg-gold text-black font-bold uppercase tracking-wider hover:bg-white hover:text-black transition-all shadow-[0_0_15px_rgba(212,175,55,0.4)]",
+        "secondary": "bg-transparent border border-gold text-gold hover:bg-gold hover:text-black transition-all uppercase tracking-wider",
+        "emergency": "bg-red-600 text-white border-2 border-red-500 animate-pulse hover:animate-none hover:bg-red-700 font-black uppercase tracking-widest"
+      },
+      "cards": {
+        "feature": "bg-zinc-900/50 border-l-2 border-gold/50 hover:border-gold p-6 transition-all group",
+        "stat": "bg-black border border-zinc-800 p-4 relative overflow-hidden"
+      },
+      "inputs": {
+        "default": "bg-zinc-950/50 border-zinc-800 focus:border-gold focus:ring-1 focus:ring-gold/50 text-white placeholder:text-zinc-600"
+      }
+    }
+  },
+  "asset_library": {
+    "images": {
+      "hero_background": {
+        "url": "https://images.unsplash.com/photo-1751467928362-3521fd404f4e",
+        "alt": "Dark luxury car bathed in golden light",
+        "usage": "Full screen hero background with overlay"
+      },
+      "abstract_gold": {
+        "url": "https://images.unsplash.com/photo-1761437855598-011cf89b2ad4",
+        "alt": "Abstract golden metallic curves",
+        "usage": "Section dividers or subtle background textures"
+      },
+      "engine_scan": {
+        "url": "https://images.unsplash.com/photo-1583849692767-ca1b185af02e",
+        "alt": "Black and silver engine bay",
+        "usage": "Vehicle Scan Page placeholder and diagnostic report header"
+      },
+      "mechanic_working": {
+        "url": "https://images.unsplash.com/photo-1633281256183-c0f106f70d76",
+        "alt": "Close up of machine gears",
+        "usage": "Service record or maintenance section"
+      },
+      "gold_texture": {
+        "url": "https://images.unsplash.com/photo-1761437856297-e7d0191f9a42",
+        "alt": "Abstract golden ring texture",
+        "usage": "Premium feature highlights"
+      }
+    },
+    "icons": {
+      "library": "lucide-react",
+      "style": "Stroke width 1.5px, Sharp edges where possible"
+    }
+  },
+  "implementation_rules": {
+    "universal_guidelines": [
+      "DO NOT use transparent backgrounds for headers or overlays where content scrolls underneath. Always use 'bg-black/80 backdrop-blur-md'.",
+      "All interactive elements (buttons, inputs, links) MUST have a 'data-testid' attribute in kebab-case (e.g., 'submit-login', 'nav-dashboard').",
+      "NEVER use gradients for dark backgrounds. Use solid hex codes or noise textures.",
+      "Use 'sonner' for all toast notifications.",
+      "Do not use generic 'Inter' font for headings. Use 'Rajdhani'.",
+      "Maintain 'Dark Mode Only' - do not implement light mode toggles."
+    ],
+    "page_specifics": {
+      "landing_page": {
+        "hero_section": "Full viewport height (h-screen). Background image with heavy black gradient overlay (bg-gradient-to-t from-black via-black/50 to-transparent). Headline centered, massive.",
+        "features_grid": "Use Bento Grid layout. Dark glass cards with gold icon accents."
+      },
+      "dashboard": {
+        "layout": "Sidebar navigation (collapsible). Top bar with 'Emergency Stop' button visible at all times.",
+        "charts": "Use Recharts with custom tooltips. Colors: Gold for primary data, Dark Grey for secondary.",
+        "scan_overlay": "When scanning, overlay the entire screen with a grid animation and 'scanning' text in monospace font."
+      },
+      "emergency_protocol": {
+        "design": "Stark contrast. Black background, flashing Red borders. All text in Red or White. Big, tactile buttons."
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "Read this file first before writing any code.",
+    "Install 'lucide-react', 'recharts', 'framer-motion', 'clsx', 'tailwind-merge' if not present.",
+    "For the 3D effect, use subtle CSS animations or 'framer-motion' instead of heavy Three.js unless absolutely necessary for performance.",
+    "Ensure all text meets WCAG AA contrast ratios against the dark backgrounds."
+  ]
+}

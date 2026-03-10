@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 2%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 44 74% 49%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 10%;
+    --muted-foreground: 0 0% 63%;
+    --accent: 44 74% 49%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 12%;
+    --input: 0 0% 12%;
+    --ring: 44 74% 49%;
+    --chart-1: 44 74% 49%;
+    --chart-2: 0 0% 40%;
+    --chart-3: 0 84% 60%;
+    --chart-4: 120 60% 45%;
+    --chart-5: 200 70% 50%;
+    --radius: 0.25rem;
+    --gold: #D4AF37;
+    --gold-dim: #C5A028;
+    --gold-glow: rgba(212, 175, 55, 0.5);
+    --emergency-red: #FF3B30;
+    --bg-default: #050505;
+    --bg-paper: #0A0A0A;
+    --bg-subtle: #121212;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #050505;
+    color: #ffffff;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rajdhani', sans-serif;
+  }
+}
+
+@layer base {
+  [data-debug-wrapper="true"] {
+    display: contents !important;
+  }
+  [data-debug-wrapper="true"] > * {
+    margin-left: inherit;
+    margin-right: inherit;
+    margin-top: inherit;
+    margin-bottom: inherit;
+    padding-left: inherit;
+    padding-right: inherit;
+    padding-top: inherit;
+    padding-bottom: inherit;
+    column-gap: inherit;
+    row-gap: inherit;
+    gap: inherit;
+  }
+}
+
+/* Gold text utility */
+.text-gold { color: #D4AF37; }
+.bg-gold { background-color: #D4AF37; }
+.border-gold { border-color: #D4AF37; }
+
+/* Glass panel */
+.glass-panel {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Gold glow shadow */
+.gold-glow {
+  box-shadow: 0 0 20px -5px rgba(212, 175, 55, 0.3);
+}
+
+.gold-glow-strong {
+  box-shadow: 0 0 30px -5px rgba(212, 175, 55, 0.5);
+}
+
+/* Scan line animation */
+@keyframes scanLine {
+  0% { top: 0%; }
+  100% { top: 100%; }
+}
+.scan-line {
+  animation: scanLine 2s linear infinite;
+}
+
+/* Pulse glow */
+@keyframes pulseGlow {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+.pulse-glow {
+  animation: pulseGlow 2s ease-in-out infinite;
+}
+
+/* Grid background */
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Shimmer effect for buttons */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.btn-gold-shimmer {
+  background: linear-gradient(90deg, #D4AF37 0%, #F7EF8A 50%, #D4AF37 100%);
+  background-size: 200% 100%;
+  color: #000;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+.btn-gold-shimmer:hover {
+  animation: shimmer 1.5s linear infinite;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+}
+
+/* Red emergency glow */
+.emergency-glow {
+  box-shadow: 0 0 30px -5px rgba(255, 59, 48, 0.4);
+}
+
+/* Particle effect (lightweight CSS) */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0; }
+  10% { opacity: 0.3; }
+  90% { opacity: 0.1; }
+  100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+}
+
+.particle {
+  position: fixed;
+  width: 2px;
+  height: 2px;
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Mono label style */
+.mono-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #D4AF37;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+/* Hide external badge */
+#emergent-badge {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+.status-operational { color: #00E676; }
+.status-restricted { color: #FFEA00; }
+.status-shutdown { color: #FF3B30; }
